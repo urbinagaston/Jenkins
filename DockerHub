@@ -1,3 +1,4 @@
+https://hub.docker.com/r/jenkins/jenkins
 docker pull jenkins
-docker run -d --name -p 8080:8080 -p 50000:50000 -v /your/home:/var/jenkins_home jenkins
-docker logs jenkins
+docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+docker logs jenkins = Para ver el código de activación.
